@@ -37,7 +37,7 @@ export default function MainGame() {
         if (currentBall.color === guessedColor) {
             console.log("You winzzzz!");
             setPoints(points + 5)
-            setLastOutcome('You win $5! ' + outcomeSuffix)
+            setLastOutcome('You win $5! ' + outcomeSuffix.replace('but', 'and'))
         } else {
             console.log("You lose! " + guessedColor);
             setPoints(points - 1)
