@@ -1,4 +1,3 @@
-import MainGame from "@/components/MainGame";
 import Link from "next/link";
 
 
