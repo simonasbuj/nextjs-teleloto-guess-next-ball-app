@@ -63,7 +63,8 @@ export default function MainGame() {
                     {BALL_COLORS.map((color) => (
                         <button key={color} className={`
                             ml-2
-                            w-[70px] h-[70px] 
+                            w-[50px] h-[50px]
+                            md:w-[70px] md:h-[70px] 
                             ${color} 
                             text-white rounded-full font-bold 
                             cursor-pointer
