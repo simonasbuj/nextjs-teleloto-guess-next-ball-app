@@ -37,7 +37,7 @@ export default function MainGame() {
         if (currentBall.color === guessedColor) {
             console.log("You winzzzz!");
             setPoints(points + 5)
-            setLastOutcome('You win $5! ' + outcomeSuffix)
+            setLastOutcome('You win $5! ' + outcomeSuffix.replace('but', 'and'))
         } else {
             console.log("You lose! " + guessedColor);
             setPoints(points - 1)
@@ -63,7 +63,8 @@ export default function MainGame() {
                     {BALL_COLORS.map((color) => (
                         <button key={color} className={`
                             ml-2
-                            w-[70px] h-[70px] 
+                            w-[50px] h-[50px]
+                            md:w-[70px] md:h-[70px] 
                             ${color} 
                             text-white rounded-full font-bold 
                             cursor-pointer
